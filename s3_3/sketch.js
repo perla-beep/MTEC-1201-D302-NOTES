@@ -17,24 +17,23 @@ createCanvas(800, 600);
 function draw() {
   background(r,g,b);
 
-  // ellipse(mouseX, mouseY, a, ellipseHeight) // ellipse = brush 
-  //ellipse(mouseX, mouseY, a*9, ellipseHeight)
-  ellipse(xLocation,height/2,width/4,width/4);
+  //ellipse(mouseX, mouseY, a, ellipseHeight) // ellipse on cursor 
+  //ellipse(mouseX, mouseY, a*9, ellipseHeight) // flat ellipse on cursor
+  ellipse(xLocation,height/2,width/4,width/4); // ball goes right
 
   xLocation = xLocation = xLocation+1; // same thing as xLocation++ and xLocation--
   xLocation+= 5; //faster movement
 
   rectMode(CENTER);
-  rect(mouseX, mouseY,grow,grow);
+  //rect(mouseX, mouseY,grow,grow); // rect grows on cursor
 
   grow += 0.5;
   
 }
 
-function mousePressed()
+function mousePressed() 
 {
 r++;
 g+=2;
 b+=10;
-
-}
+} // Everytime mouse is pressed color changes
