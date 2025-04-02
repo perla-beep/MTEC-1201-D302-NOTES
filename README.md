@@ -1,3 +1,3 @@
 # MTEC-1201-D302
 
-ORMEPOGME
+Notes fo *classs*
